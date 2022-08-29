@@ -3,9 +3,6 @@ pipeline{
     environment{
         local = "local_pavan"
     }
-    parameters {
-        string(name : 'enter name', defaultValue : 'pavan', description : 'name to enter')
-    }
     stages{
         stage("env"){
             steps{
