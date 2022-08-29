@@ -17,7 +17,7 @@ pipeline{
                         script: "printf \$(git rev-parse --short ${GIT_COMMIT})",
                         returnStdout: true
                     )
-                GIT_HOME = tool name: args.git, type: 'git'
+              //  GIT_HOME = tool name: args.git, type: 'git'
             }
             steps{
                 script{
