@@ -17,6 +17,7 @@ pipeline{
                         script: "printf \$(git rev-parse --short ${GIT_COMMIT})",
                         returnStdout: true
                     )
+                GIT_HOME = tool name: args.git, type: 'git'
             }
             steps{
                 script{
@@ -25,7 +26,7 @@ pipeline{
                 echo "local variables : ${env.age} ${env.name}"
                 echo env.GENDER
                 echo AGE
-                echo env.GIT_COMMIT_SHORT
+                echo env.GIT_HOME
             }
         }
     }
