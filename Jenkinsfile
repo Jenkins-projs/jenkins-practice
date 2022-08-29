@@ -3,6 +3,9 @@ pipeline{
     environment{
         local = "local_pavan"
     }
+    parameters{
+        string(name : 'DEPLOY_ENV' , defaultValue = 'DEV' ,description = 'select the env to deploy')
+    }
     stages{
         stage("env"){
             steps{
