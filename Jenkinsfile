@@ -3,9 +3,9 @@ pipeline{
     environment{
         local = "local_pavan"
     }
-    parameters{
-        string(name : 'DEPLOY_ENV' , defaultValue = 'DEV' ,description = 'select the env to deploy')
-    }
+   parameters {
+        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+   }
     stages{
         stage("env"){
             steps{
