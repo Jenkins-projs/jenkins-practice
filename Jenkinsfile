@@ -3,9 +3,9 @@ pipeline{
     environment{
         local = "local_pavan"
     }
-   parameters {
-        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-   }
+    parameters {
+        string(name : 'enter name', defaultValue : 'pavan' description : 'name to enter')
+    }
     stages{
         stage("env"){
             steps{
