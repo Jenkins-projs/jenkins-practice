@@ -25,6 +25,7 @@ pipeline{
                 echo "local variables : ${env.age} ${env.name}"
                 echo env.GENDER
                 echo AGE
+                echo env.GIT_COMMIT_SHORT
             }
         }
     }
